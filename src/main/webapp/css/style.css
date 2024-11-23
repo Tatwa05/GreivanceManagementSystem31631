@@ -1,0 +1,77 @@
+
+    body, html {
+      scroll-behavior: smooth;
+    }
+    .section {
+      padding: 100px 0;
+      min-height: 100vh;
+    }
+    #home {
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fcb69f, #fee140, #f9d423);
+      background-size: 400% 400%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: gradientBackground 15s ease infinite;
+    }
+    @keyframes gradientBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    #about {
+      background: #e9ecef;
+      padding-top: 50px;
+    }
+    #login {
+      background: #dee2e6;
+    }
+    #contact {
+      background: #ced4da;
+    }
+    .navbar {
+      background-color: #007bff !important; /* Blue background */
+    }
+    .navbar-nav a {
+      color: #fff !important; /* White text */
+      margin: 0 15px;
+    }
+    .navbar-brand, .navbar-toggler-icon {
+      color: #fff !important; /* White text for brand and toggler */
+    }
+    .animated-title {
+      font-size: 4rem;
+      font-weight: bold;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .animated-subtitle {
+      font-size: 2rem;
+      margin-top: 20px;
+      animation: slideIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes slideIn {
+      0% { transform: translateY(100px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    .about-content {
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-control {
+      border-radius: 40px;
+      padding: 24px 30px;
+    }
+    .input-group-text {
+      border-radius: 30px 0 0 30px;
+    }
+    .input-group-append .btn {
+      border-radius: 0 30px 30px 0;
+    }
+  
